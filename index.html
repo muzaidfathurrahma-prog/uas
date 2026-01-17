@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <title>Website Pendaftaran Event Kampus</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="container">
+  <section class="header">
+    <h1>Seminar Teknologi Muzaid</h1>
+    <p class="subtitle">
+      Seminar teknologi terbaru bersama para Pak Yusuf
+    </p>
+    <p><strong>Tanggal:</strong> 20 Februari 2026</p>
+    <p><strong>Lokasi:</strong> Ruang Kelas</p>
+  </section>
+
+  <section class="form-section">
+    <h2>Form Pendaftaran</h2>
+
+    <form id="form">
+      <input type="text" id="nama" placeholder="Nama Lengkap">
+      <input type="text" id="email" placeholder="Email">
+      <input type="text" id="hp" placeholder="Nomor HP">
+
+      <select id="kategori">
+        <option value="">Pilih Kategori Peserta</option>
+        <option value="Mahasiswa">Mahasiswa</option>
+        <option value="Umum">Umum</option>
+      </select>
+
+      <button type="submit">Daftar Sekarang</button>
+      <button id="reset" type="button">Reset Semua Data</button>
+    </form>
+
+    <p id="pesan"></p>
+    <p class="counter">
+      Jumlah Peserta: <span id="jumlah">0</span> / 50
+    </p>
+  </section>
+  
+  <section class="list-section">
+    <h3>Daftar Peserta Terdaftar</h3>
+    <ul id="list"></ul>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
